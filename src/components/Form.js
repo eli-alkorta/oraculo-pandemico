@@ -6,10 +6,11 @@ class Form extends React.Component {
   }
 
   render() {
-    <div className="Form">
-      <h1>Hola</h1>
+    return (
+    <div className="form">
+      <h1>Hola desde form</h1>
     </div>
-  }
+    )}
 }
 
 export default Form;

@@ -26,8 +26,8 @@ a{
 
 .bright{
   border-radius:50%;
-  height:220px;
-  width:240px;
+  height:180px;
+  width:220px;
   margin-top:-180px;
   margin-left:66px;
   position:absolute;
@@ -48,7 +48,7 @@ a{
 .start-button{
   position: relative;
   left: 120px;
-  top: 35px;
+  top: 40px;
   padding: 5px;
   border-radius: 10%;
   background-color: #f9b4fd;
@@ -57,7 +57,7 @@ a{
     color: black;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'roboto';
+    font-family: 'Fira Sans', sans-serif;
   }
 }
 
@@ -109,15 +109,6 @@ a{
   display:inline-block;
 }
 
-.bottom2{
-  width:695px;
-  border-radius:10px;
-  margin-left:10px;
-  height:15px;
-  background-color:#290333;
-  display:inline-block;
-}
-
 .bottom3{
   width:205px;
   border-radius:10px;
@@ -147,7 +138,6 @@ a{
 }
 
 .circle{
-  // background-color:#fffdff;
   background-color: black;
   height:1300px;
   border-radius:50%;
@@ -203,9 +193,7 @@ a{
 }
 
 .table{
-  // height:500px;
   width:100%;
-  // background-color:black;
   opacity:1;
   position:fixed;
   transform: translate(0px,-19px);
@@ -231,7 +219,11 @@ a{
 
 .div5{
   background-color: #ae15e7;
+}
 
+.form{
+  height: 300px;
+  width: 300px;
 }
 
 @keyframes pulse{
