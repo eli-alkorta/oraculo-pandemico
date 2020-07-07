@@ -5,10 +5,10 @@ import $ from 'jquery';
 function Landing() {
   function changeLetters(){
     $(document).ready(function(){
-      var theLetters = "abcdefghijklmnopqrstuvwxyz&^$!"; //You can customize what letters it will cycle through
-      var ctnt = "Oráculo pandémico"; // Your text 
-      var speed = 20; // ms per frame
-      var increment = 10; // frames per step. Must be >2
+      var theLetters = "abcdefghijklmnopqrstuvwxyz&^$!"; 
+      var ctnt = "Oráculo pandémico"; 
+      var speed = 20; 
+      var increment = 10; 
       
           
       var clen = ctnt.length;       
@@ -16,7 +16,7 @@ function Landing() {
       var stri = 0;
       var block = "";
       var fixed = "";
-      //Call self x times, whole function wrapped in setTimeout
+    
       (function rustle (i) {          
       setTimeout(function () {
         if (--i){rustle(i);}
@@ -26,9 +26,9 @@ function Landing() {
       })(clen*increment+1); 
       function nextFrame(pos){
         for (var i=0; i<clen-stri; i++) {
-          //Random number
+        
           var num = Math.floor(theLetters.length * Math.random());
-          //Get random letter
+          
           var letter = theLetters.charAt(num);
           block = block + letter;
         }
@@ -36,8 +36,7 @@ function Landing() {
           stri++;
         }
         if (si === increment){
-        // Add a letter; 
-        // every speed*10 ms
+        
         fixed = fixed +  ctnt.charAt(stri - 1);
         si = 0;
         }

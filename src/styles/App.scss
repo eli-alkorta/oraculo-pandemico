@@ -1,6 +1,10 @@
 a{
   text-decoration: none;
 }
+body{
+  margin: 0;
+  height: 100vh;
+}
 .App{
   background-color: black;
   height: 1000px;
@@ -242,4 +246,81 @@ a{
   0%{width:1000px;height:1000px;}
   50%{width:1050px;height:1050px;}
   100%{width:1000px;height:1000px;}
+}
+
+.hiddenInputMessage {
+  display: none;
+}
+
+.input-error-message {
+  font-size: 10px;
+  color: #e17334;;
+  padding-top: 2px;
+}
+
+.form{
+  background-color: black;
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-size: 28px;
+  height: 100%;
+  width: 100%;
+}
+
+.form-input{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 300px;
+}
+
+label{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #f9b4fd;
+}
+
+select{
+  margin-bottom: 90px;
+}
+
+.form-title{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 46px;
+  color: black;
+  text-shadow: -2px 2px 0 #f232fe, 2px 2px 0 #f232fe, 2px -2px 0 #f232fe, -1px -1px 0 #f232fe;
+}
+
+.ancestor-button{
+  position: relative;
+  left: 43.5%;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #f9b4fd;
+}
+
+.buttonDisabled {
+  position: relative;
+  left: 42%;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: grey !important;
+  opacity: 0.4 !important;
 }
