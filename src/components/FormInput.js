@@ -21,10 +21,10 @@ const FormInput = (props) => {
       />
      <select className={`${props.id !== 'hair-input' ? 'hiddenInputMessage' : ''}`} onChange={updateInputValue}name={props.name} id={props.id}>
        <option value=""></option>
-       <option value="Liso">Liso</option>
-       <option value="Rizado">Rizado</option>
-       <option value="Ondulado">Ondulado</option>
-       <option value="No tengo pelo">No tengo pelo</option>
+       <option value="Liso">liso</option>
+       <option value="Rizado">rizado</option>
+       <option value="Ondulado">ondulado</option>
+       <option value="No tengo pelo">inexistente</option>
      </select>
     </div>
     )}

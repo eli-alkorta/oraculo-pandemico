@@ -22,6 +22,32 @@ class Form extends React.Component {
   this.handleInputValue = this.handleInputValue.bind(this);
 }
 
+  componentDidUpdate() {
+  localStorage.setItem("data", JSON.stringify(this.state.userInfo));
+}
+
+  componentDidMount() {
+    const localData = JSON.parse(localStorage.getItem("data"));
+      if (localData !== null) {
+        this.setState((prevState) => {
+          return {
+            userInfo: {
+              ...prevState.userInfo,
+              "firstName": localData.firstName,
+              "surname": localData.surname,
+              "age": localData.age,
+              "city": localData.city,
+              "hate": localData.hate,
+              "love": localData.love,
+              "food": localData.food,
+              "phobia": localData.phobia,
+              "hair": localData.hair
+            },
+          };
+        });
+      }
+    }
+
   handleInputValue(inputName, inputValue) {
     this.setState((prevState) => {
       return {
@@ -51,7 +77,7 @@ class Form extends React.Component {
               className="name-input"
               type="text"
               name="firstName"
-              value={this.state.userInfo.name}
+              value={this.state.userInfo.firstName}
               handleInputValue={this.handleInputValue}
           />
           <FormInput
@@ -127,7 +153,7 @@ class Form extends React.Component {
               handleInputValue={this.handleInputValue}
           />
           <button type='button' className={`${this.state.isValidated ? 'ancestor-button' : 'buttonDisabled'}`} >
-            <Link className="link-ancestor" to='/ancestor' title='Contacta con tus ancestros'>Conoce tus vidas pasadas</Link>
+            <Link className="link-ancestor" to={{pathname:'/ancestor', state:{userInfo: this.state.userInfo}}} title='Contacta con tus ancestros'>Conoce tus vidas pasadas</Link>
           </button>
       </form>
     </div>
@@ -139,11 +165,11 @@ Form.defaultProps = {
   surname: 'Gutierrez',
   age: "35",
   city: "Bogota",
-  hate: "Que me toquen los pies",
-  love: "Desayunar en la cama",
-  food: "Tortilla de patatas sin cebolla",
-  phobia: "Insectos",
-  hair: "Rizado"
+  hate: "que me toquen los pies",
+  love: "desayunar en la cama",
+  food: "tortilla de patatas sin cebolla",
+  phobia: "insectos",
+  hair: "liso"
 };
 
 export default Form;

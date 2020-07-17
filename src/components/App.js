@@ -5,6 +5,7 @@ import Landing from './Landing';
 import Form from './Form';
 import FormInput from './FormInput';
 import Ancestor from './Ancestor';
+import Chat from './Chat';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
   <Route path="/form" component={Form}/>
   <Route path="/form-input" component={FormInput}/>
   <Route path="/ancestor" component={Ancestor}/>
+  <Route path="/chat" component={Chat}/>
 </Switch>
   );
 }
