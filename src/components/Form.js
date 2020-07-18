@@ -70,6 +70,7 @@ class Form extends React.Component {
     return (
     <div className="form">
       <form id="formContainer">
+        <Link className="link-return1" to='/' title='Volver'>Volver</Link>
         <h2 className="form-title">Necesitamos saber algunas cosas de ti ...</h2>
           <FormInput
               id="name-input"
