@@ -6,6 +6,7 @@ const History1 = (props) => {
   return(
     <div className="history">
       <div className="photo-container">
+        <Link className="link-return" to='/form' title='Volver'>Volver</Link>
         <img className="photo" src="../img/agapita.jpg" alt="Agapita"/>
       </div>
       <div className="text">
