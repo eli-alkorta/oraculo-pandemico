@@ -49,8 +49,8 @@ function Landing() {
     <div className="App">
       <div className='cristalBall'>
         <div className='cristal'>
-          <div className='ball'>
-            <div className='name' onMouseOver={changeLetters}>Oráculo pandémico</div>
+          <div className='ball' onMouseOver={changeLetters}>
+            <div className='name'>Oráculo pandémico</div>
               <button type='button' className='start-button'>
                 <Link className="link-oracle" to='/form' title='Comenzar'>Comenzar</Link>
               </button>
