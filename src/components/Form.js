@@ -1,6 +1,7 @@
 import React from 'react';
 import FormInput from './FormInput';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 class Form extends React.Component {
   constructor(props) {
@@ -22,11 +23,54 @@ class Form extends React.Component {
   this.handleInputValue = this.handleInputValue.bind(this);
 }
 
+  swing(){
+    var swinger = $(".swinger");
+
+    for (var i = 0; i < 15; i++) {
+      var stringContainer = document.createElement('li');
+      var string          = document.createElement('span');
+      var ball            = document.createElement('span');
+      stringContainer.className = 'no' + i;
+      string.className          = "string";
+      ball.className            = "ballP";
+      swinger.append(stringContainer);
+      $(stringContainer).append(string, ball); 
+    }
+
+      var g        = 9.8; // gravity
+      var maxOsc  = 15;   // number of oscillations the longest pendulum performs in the cycle
+      var duration = 240; // duration of one cycle in seconds
+
+    // Calculate string heights
+      var height = [];
+      for (var j = 0; j < 15; j++) {
+        var length   = g * duration / Math.pow((2 * Math.PI * (maxOsc + j)), 2); // equation to calculate string lengths for harmonic wave pendulum
+        height.push(length);
+      }
+      height.reverse();
+    
+      var sizeCoeff = 150;
+      // Use harmonic pendulum equation to animate
+      var elements = $("li");
+      for (var k = 0; k < 15; k++) {
+        var that = elements[k];
+        var time = 2 * Math.PI * Math.sqrt(height[k] / g); // harmonic wave pendulum equation
+        var size = sizeCoeff * height[k];
+        $(".string", that).height(size * 10); // magic numbers for string length in px
+        $(".ballP", that)
+          .height(size)
+          .width(size)
+          .css('left', (-1/2) * size);
+        $(that).attr("style", "animation-duration: " + time + "s;");
+      }
+      }
+
   componentDidUpdate() {
   localStorage.setItem("data", JSON.stringify(this.state.userInfo));
 }
 
   componentDidMount() {
+    this.swing();
     const localData = JSON.parse(localStorage.getItem("data"));
       if (localData !== null) {
         this.setState((prevState) => {
@@ -71,7 +115,8 @@ class Form extends React.Component {
     <div className="form">
       <form id="formContainer">
         <Link className="link-return1" to='/' title='Volver'>Volver</Link>
-        <h2 className="form-title">Necesitamos saber algunas cosas de ti ...</h2>
+        <h2 className="form-title">Para descubrir tus vidas pasadas <br/>el Oráculo necesita saber de ti ...</h2>
+        <ul class="swinger"></ul>
           <FormInput
               id="name-input"
               labelName="Nombre"
@@ -154,7 +199,7 @@ class Form extends React.Component {
               handleInputValue={this.handleInputValue}
           />
           <button type='button' className={`${this.state.isValidated ? 'ancestor-button' : 'buttonDisabled'}`} >
-            <Link className="link-ancestor" to={{pathname:'/ancestor', state:{userInfo: this.state.userInfo}}} title='Contacta con tus ancestros'>Conoce tus vidas pasadas</Link>
+            <Link className="link-ancestor" to={{pathname:'/ancestor', state:{userInfo: this.state.userInfo}}} title='Contacta con tus ancestros'>Conoce tu reencarnación</Link>
           </button>
       </form>
     </div>

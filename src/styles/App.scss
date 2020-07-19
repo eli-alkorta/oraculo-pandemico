@@ -312,7 +312,7 @@ select{
 
 .ancestor-button{
   position: relative;
-  left: 42%;
+  left: 42.5%;
   margin-top: 0;
   margin-bottom: 40px;
   padding: 10px;
@@ -325,7 +325,7 @@ select{
 
 .buttonDisabled {
   position: relative;
-  left: 42%;
+  left: 42.5%;
   margin-top: 0;
   margin-bottom: 40px;
   padding: 10px;
@@ -334,6 +334,43 @@ select{
   font-family: 'Fira Sans', sans-serif;
   background-color: grey !important;
   opacity: 0.4 !important;
+}
+
+.swinger{
+  width: 1px;
+  height: 0px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 400px;
+}
+  li{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  list-style: none;
+  animation: swing alternate infinite ease-in-out;
+}
+.string{
+  display: block;
+  width: 1px;
+  background-color: rgba(255,255,255,.3);
+}
+.ballP{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius:30px;
+  background:radial-gradient(#f232fe, #f9b4fd 70%) -3px -5px;
+  border: 1px solid #c8c8c8;
+  content: ' ';
+  position: relative;
+  box-shadow:0 2px 2px 1px rgba(0,0,0,.2), -2px -2px 4px 3px rgba(0,0,0,.1) inset;
+}
+@keyframes swing{
+  0%{transform:rotate(-25deg)}
+  100%{transform:rotate(25deg)}
 }
 
 .history{
@@ -354,7 +391,7 @@ select{
   color: #f9b4fd;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -375,6 +412,7 @@ select{
 }
 
 .link-return3{
+  margin-top: 35px;
   margin-bottom: 20px;
   position: relative;
   right: 42%;
@@ -398,6 +436,18 @@ select{
 .photo3{
   height: 700px;
   width: auto;
+}
+
+.photo4{
+  margin-top: 40px;
+  width: 435px;
+  height: auto;
+}
+
+.photo5{
+  margin-top: 60px;
+  width: 500px;
+  height: auto;
 }
 
 .text{
