@@ -494,3 +494,23 @@ select{
   font-family: 'Fira Sans', sans-serif;
   background-color: #f232fe;
 }
+
+.chat-container{
+  background-color: black;
+  color: #f9b4fd;
+  height: 100vh;
+  width: 100vw;
+}
+
+.ghost {
+  background-color: white;
+  color: rgba(0,0,0,1);
+}
+
+.scary{
+  background-image: url("../scary.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
