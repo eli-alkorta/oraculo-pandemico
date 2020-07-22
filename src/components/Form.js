@@ -116,7 +116,7 @@ class Form extends React.Component {
       <form id="formContainer">
         <Link className="link-return1" to='/' title='Volver'>Volver</Link>
         <h2 className="form-title">Para descubrir tus vidas pasadas <br/>el Oráculo necesita saber de ti ...</h2>
-        <ul class="swinger"></ul>
+        <ul className="swinger"></ul>
           <FormInput
               id="name-input"
               labelName="Nombre"
