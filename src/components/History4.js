@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Merceditas from '../img/merceditas.jpg';
 
 const History4 = (props) => {
   
@@ -7,7 +8,7 @@ const History4 = (props) => {
     <div className="history">
       <div className="photo-container">
         <Link className="link-return" to='/form' title='Volver'>Volver</Link>
-        <img className="photo" src="../img/merceditas.jpg" alt="Merceditas"/>
+        <img className="photo" src={Merceditas} alt="Merceditas"/>
       </div>
       <div className="text">
         Te llamabas Merceditas y eras una mujer elegante, con clase y podería. Mira qué abrigo de visón llevabas todos los domingos a misa. Desgraciadamente, el dinero no transmigra y a ti, {props.state.userInfo.firstName}, nunca te ha llegado una peseta de Merceditas.<br/><br/>

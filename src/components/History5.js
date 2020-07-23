@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Leocadio from '../img/leocadio.jpg';
 
 const History5 = (props) => {
   
@@ -7,7 +8,7 @@ const History5 = (props) => {
     <div className="history">
       <div className="photo-container">
         <Link className="link-return" to='/form' title='Volver'>Volver</Link>
-        <img className="photo" src="../img/leocadio.jpg" alt="Leocadio"/>
+        <img className="photo" src={Leocadio} alt="Leocadio"/>
       </div>
       <div className="text">
         La persona que está bajo esa bombona se llama Leocadio y es una de tus reencarnaciones más interesantes. Trata de luchar contra la quinta pandemia de cólera, que se extendió por el mundo a finales del siglo XIX y mató a más de 60.000 personas en España.<br/><br/>

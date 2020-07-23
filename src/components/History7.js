@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Rigoberta from '../img/rigoberta.jpeg';
+import Rigoberta2 from '../img/rigoberta2.jpg';
 
 const History7 = (props) => {
   
@@ -7,8 +9,8 @@ const History7 = (props) => {
     <div className="history3">
       <div className="photo-container3">
         <Link className="link-return3" to='/form' title='Volver'>Volver</Link>
-        <img className="photo3" src="../img/rigoberta.jpeg" alt="Rigoberta y Filemona"/>
-        <img className="photo5" src="../img/rigoberta2.jpg" alt="Relajadas en el campo"/>
+        <img className="photo3" src={Rigoberta} alt="Rigoberta y Filemona"/>
+        <img className="photo5" src={Rigoberta2} alt="Relajadas en el campo"/>
       </div>
       <div className="text3">
         Te llamabas Rigoberta y pertenecías a una conocida familia de la alta burguesía mexicana, emigrada a {props.state.userInfo.city} a principios del siglo XX. No empezaste tu nueva vida con buen pie, porque al poco de llegar, te topaste con una pandemia bastante letal: la gripe española de 1918, que causó nada menos que 100 millones de víctimas.<br/><br/>

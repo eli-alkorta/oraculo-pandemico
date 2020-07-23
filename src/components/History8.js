@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Josefi from '../img/josefi.jpg';
 
 const History8 = (props) => {
   
@@ -7,7 +8,7 @@ const History8 = (props) => {
     <div className="history">
       <div className="photo-container">
         <Link className="link-return" to='/form' title='Volver'>Volver</Link>
-        <img className="photo" src="../img/josefi.jpg" alt="Josefi"/>
+        <img className="photo" src={Josefi} alt="Josefi"/>
       </div>
       <div className="text">
         ¿Alguna vez te has preguntado por qué te pasas el día toquiteando el teléfono? Pues porque en otra vida fuiste operadora telefónica. Como las de Jazztel pero en antiguo. Te llamabas Josefi y tenías un peinado muy moderno para la época, precursor del tupé Rock n' Roll.<br/><br/>

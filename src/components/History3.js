@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Fulgencio from '../img/fulgencio.jpg';
+import Fulgencio2 from '../img/fulgencio2.jpg';
 
 const History3 = (props) => {
   
@@ -7,8 +9,8 @@ const History3 = (props) => {
     <div className="history3">
       <div className="photo-container3">
         <Link className="link-return3" to='/form' title='Volver'>Volver</Link>
-        <img className="photo3" src="../img/fulgencio.jpg" alt="Fulgencio"/>
-        <img className="photo4" src="../img/fulgencio2.jpg" alt="Fulgencio y su familia"/>
+        <img className="photo3" src={Fulgencio} alt="Fulgencio"/>
+        <img className="photo4" src={Fulgencio2} alt="Fulgencio y su familia"/>
       </div>
       <div className="text3">
         Te llamas Fulgencio y eres un señor elegante. Esta foto demuestra que sobreviviste al primer brote de gripe porcina, o virus influenza AH1N1, uno de los descendientes de la temible gripe española de 1918. <br/><br/>

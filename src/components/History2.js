@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Eladia from '../img/eladia.jpg';
 
 const History2 = (props) => {
   
@@ -7,7 +8,7 @@ const History2 = (props) => {
     <div className="history">
       <div className="photo-container">
         <Link className="link-return" to='/form' title='Volver'>Volver</Link>
-        <img className="photo" src="../img/eladia.jpg" alt="Eladia"/>
+        <img className="photo" src={Eladia} alt="Eladia"/>
       </div>
       <div className="text">
         Te llamas Eladia. Tú y tus amigas os protegéis de la gripe rusa, pandemia que, entre 1889 y 1894, causó un millón de muertes en todo el planeta. Eres la primera de la foto, empezando por la izquierda.<br/><br/>

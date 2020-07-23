@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Paco from '../img/paco.jpg';
 
 const History9 = (props) => {
   
@@ -7,7 +8,7 @@ const History9 = (props) => {
     <div className="history">
       <div className="photo-container">
         <Link className="link-return" to='/form' title='Volver'>Volver</Link>
-        <img className="photo" src="../img/paco.jpg" alt="Paco y su esposa Angelita"/>
+        <img className="photo" src={Paco} alt="Paco y su esposa Angelita"/>
       </div>
       <div className="text">
         Tu nombre era Paco y así te protegías de la viruela en la Inglaterra de los años 20. Esta tremenbunda enfermedad mató a 300 millones de personas solo en el siglo XX, pero a ti no te pilló. Y a tu esposa Angelita tampoco <br/><br/>

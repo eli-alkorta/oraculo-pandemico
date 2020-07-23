@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Horacio from '../img/horacio.jpg';
+import Horacio2 from '../img/horacio2.jpg';
 
 const History6 = (props) => {
   
@@ -7,8 +9,8 @@ const History6 = (props) => {
     <div className="history3">
       <div className="photo-container3">
         <Link className="link-return3" to='/form' title='Volver'>Volver</Link>
-        <img className="photo3" src="../img/horacio.jpg" alt="Horacio"/>
-        <img className="photo4" src="../img/horacio2.jpg" alt="Horacio en su época salvaje"/>
+        <img className="photo3" src={Horacio} alt="Horacio"/>
+        <img className="photo4" src={Horacio2} alt="Horacio en su época salvaje"/>
       </div>
       <div className="text3">
         Sin duda una de tus vidas pasadas más exóticas: te llamas Horacio y eres barrendero en el lejano y salvaje Oeste, en la segunda mitad del siglo XIX. Te proteges de una epidemia de tifus, propagada por las pulgas de los roedores. De ahí que tu trabajo fuera vital para mantener a las ratas lejos de la población de tu ciudad, Memphis. <br/><br/>
