@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Agapita from '.../public/img/agapita.jpg';
+import Agapita from '../img/agapita.jpg';
 
 const History1 = (props) => {
   
