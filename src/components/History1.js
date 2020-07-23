@@ -7,7 +7,7 @@ const History1 = (props) => {
     <div className="history">
       <div className="photo-container">
         <Link className="link-return" to='/form' title='Volver'>Volver</Link>
-        <img className="photo" src="../img/agapita.jpg" alt="Agapita"/>
+        <img className="photo" src="/img/agapita.jpg" alt="Agapita"/>
       </div>
       <div className="text">
         Tu nombre era Agapita y sobreviviste a una epidemia de tuberculosis que asoló tu pueblo a principios del siglo XX. <br/><br/>
