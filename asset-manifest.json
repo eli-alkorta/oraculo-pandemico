@@ -1,24 +1,35 @@
 {
   "files": {
-    "main.css": "./static/css/main.0c3f4a65.chunk.css",
-    "main.js": "./static/js/main.2d84a41a.chunk.js",
-    "main.js.map": "./static/js/main.2d84a41a.chunk.js.map",
+    "main.css": "./static/css/main.66e29e4c.chunk.css",
+    "main.js": "./static/js/main.b9323270.chunk.js",
+    "main.js.map": "./static/js/main.b9323270.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.97b33596.js",
     "runtime-main.js.map": "./static/js/runtime-main.97b33596.js.map",
-    "static/js/2.7582c366.chunk.js": "./static/js/2.7582c366.chunk.js",
-    "static/js/2.7582c366.chunk.js.map": "./static/js/2.7582c366.chunk.js.map",
+    "static/js/2.5d576af3.chunk.js": "./static/js/2.5d576af3.chunk.js",
+    "static/js/2.5d576af3.chunk.js.map": "./static/js/2.5d576af3.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.183aa85a8b4398c061b04da879d99a2b.js": "./precache-manifest.183aa85a8b4398c061b04da879d99a2b.js",
+    "precache-manifest.11ea48ca2df106f6af6122eff81626c5.js": "./precache-manifest.11ea48ca2df106f6af6122eff81626c5.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.0c3f4a65.chunk.css.map": "./static/css/main.0c3f4a65.chunk.css.map",
-    "static/js/2.7582c366.chunk.js.LICENSE.txt": "./static/js/2.7582c366.chunk.js.LICENSE.txt",
+    "static/css/main.66e29e4c.chunk.css.map": "./static/css/main.66e29e4c.chunk.css.map",
+    "static/js/2.5d576af3.chunk.js.LICENSE.txt": "./static/js/2.5d576af3.chunk.js.LICENSE.txt",
     "static/media/agapita.jpg": "./static/media/agapita.e887a1c7.jpg",
+    "static/media/eladia.jpg": "./static/media/eladia.42686d08.jpg",
+    "static/media/fulgencio.jpg": "./static/media/fulgencio.ffa47bd2.jpg",
+    "static/media/fulgencio2.jpg": "./static/media/fulgencio2.97da78c9.jpg",
+    "static/media/horacio.jpg": "./static/media/horacio.2009a932.jpg",
+    "static/media/horacio2.jpg": "./static/media/horacio2.20d6063e.jpg",
+    "static/media/josefi.jpg": "./static/media/josefi.469400e9.jpg",
+    "static/media/leocadio.jpg": "./static/media/leocadio.43f20857.jpg",
+    "static/media/merceditas.jpg": "./static/media/merceditas.a0886888.jpg",
+    "static/media/paco.jpg": "./static/media/paco.ae87376c.jpg",
+    "static/media/rigoberta.jpeg": "./static/media/rigoberta.822cf898.jpeg",
+    "static/media/rigoberta2.jpg": "./static/media/rigoberta2.d528f313.jpg",
     "static/media/App.scss": "./static/media/scary.bc010bb5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.97b33596.js",
-    "static/js/2.7582c366.chunk.js",
-    "static/css/main.0c3f4a65.chunk.css",
-    "static/js/main.2d84a41a.chunk.js"
+    "static/js/2.5d576af3.chunk.js",
+    "static/css/main.66e29e4c.chunk.css",
+    "static/js/main.b9323270.chunk.js"
   ]
 }
